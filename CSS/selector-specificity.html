@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selector Specificity</title>
+        <style>
+            /* Specificity values - (a, b, c, d)*/
+            /* (a = 1 for inline & 0 for others, b = #ids appear, c = #class appear including Pseudo class, 
+                d = #type appear)*/
+            /* (0, 0, 0, 2)*/
+            ul > li {
+                cursor: pointer;
+            }
+            /* (0, 0, 2, 4)*/
+            div > ul > li.highlight:hover > span{
+                background-color: orange;
+            }
+            /* (0, 0, 2, 3)*/
+            ul > li.display:hover > span{
+                background-color: olive;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit earum adipisci praesentium sit quaerat explicabo impedit doloremque quisquam corrupti culpa, et aut maxime dolores illum illo fugiat tenetur, assumenda magnam.
+
+            <ul>
+                <li class="highlight"><span>INDIA</span></li>
+                <li class="display"><span>AMERICA</span></li>
+                <li class="display"><span>AUSTRIA</span></li>
+            </ul>
+        </div>
+        <ul>
+            <li class="highlight"><span>Rupees</span></li>
+            <li class="display"><span>Dollar</span></li>
+            <li class="display"><span>Euro</span></li>
+        </ul>
+    </body>
+</html>

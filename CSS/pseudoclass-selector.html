@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pseudo class Selectors</title>
+        <style>
+            /* pseudo class selectors */
+            p:first-letter{
+                font-size: 2em;
+            }
+            /* Universal selector */
+            *:first-line{
+                color: coral;
+            }
+            *{
+                border: 1px solid black;
+            }
+            /* hover pseudo class selector */
+            a:hover{
+                color: maroon;
+            }
+            p:hover{
+                color:deeppink;
+                cursor: pointer;
+            }
+            /* link pseudo class selector */
+            a:link{
+                background-color: greenyellow;
+            }
+            /* visited pseudo class selector */
+            a:visited{
+                background-color: grey;
+            }
+            /* active pseudo selector */
+            a:active{
+                background-color: olive;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="wrap">Some headings</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A rerum explicabo harum voluptatum ut, minima ex obcaecati ipsam adipisci 
+            <a href="https://www.google.com">Google Search Page</a><br />
+            <a href="https://www.google.com" target="blank">Google Search Page</a><br />
+            cupiditate vel reprehenderit nostrum delectus non voluptas odit neque illo animi.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquid animi aliquam amet molestias provident sed, vero enim temporibus corrupti dicta, porro hic accusamus saepe totam, quos obcaecati minus facilis.
+        </p>
+        <div class="crop">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis unde iusto perspiciatis corporis dicta necessitatibus numquam pariatur corrupti autem iste nisi architecto, quaerat ab commodi quis ipsa, adipisci nostrum nulla.
+        </div>
+        <div class="crop">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At necessitatibus saepe corporis, 
+            <span>Span 1</span><br />
+            <a href="https://www.facebook.com">facebook</a><br />
+            <a href="https://www.gmail.com">G-mail</a><br />
+            <span>Span 2</span>
+            vero quo, rerum nostrum quaerat autem magni possimus dolorem inventore deleniti? Cum nam earum excepturi assumenda alias dolores.
+        </div>
+        <p class="crop">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iure ab officiis provident voluptatem aperiam nihil non neque eius, quos similique modi rem incidunt aliquid unde nisi deleniti autem dicta?
+        </p>
+    </body>
+</html>

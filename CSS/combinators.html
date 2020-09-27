@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+        /* descendant selector - space is the ancestor-descendant selector */
+        div a{
+            color: olive;
+        }
+        /* child selector - > is the parent child combinator */
+        p > a {
+            font-size: 2em;
+        }
+        /* no spaces - element that satisfies each individual selector is selected */
+        p.wrap{
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, similique? Tenetur possimus vitae in excepturi saepe, quidem ex eaque doloribus aperiam exercitationem ut laborum, quisquam amet nam numquam. Unde, labore!
+        <p class="wrap">
+            PARA 1
+            <a href="#">Random Link</a>
+        </p>
+        <p>
+            PARA 2
+            <a href="#">Random Link</a>
+        </p>
+    </div>
+    <div class="wrap">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum voluptas similique ex voluptatibus illum aut quae temporibus repellat! Dicta sit id ut sapiente earum aliquam quibusdam voluptatum quo molestias ullam?
+    </div>
+    <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur veniam magni, eaque dolore doloremque maxime dicta alias earum eius libero soluta perferendis nostrum expedita ad nisi! Laudantium possimus itaque atque?
+        <p class="wrap">
+            PARA 3
+            <a href="#">Random Link</a>
+        </p>
+        <a href="#">Random Link</a>
+    </div>
+    <p>
+        PARA 4
+        <a href="#">Random Link</a>
+    </p>
+    <a href="#">Random Link</a>
+</body>
+</html>

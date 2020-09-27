@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms</title>
+    </head>
+    <body>
+        <form action="msg.html" method="post">
+            <label for="name">Name</label>:
+            <input type="text" id="name" name="name" value="mary" required/>
+    
+            <label for="email">Email-id:</label>
+            <input type="email" id="email" name="email"/> 
+    
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1"/> 
+    
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search"/> 
+    
+            <label for="date">Starting-date:</label>
+            <input type="date" id="date" name="Starting-date" min="2019-06-04" max="2019-11-09"/> 
+            
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="password"/>
+    
+            <label for="address">Address</label>
+            <textarea id="address" rows="6"></textarea>
+    
+            <label for="city">City:</label>
+            <select id="city" name="city">
+                <option value="BNG">Bangalore</option>
+                <option selected value="ODI">Odisha</option>
+                <option value="BOM">Mumbai</option>
+                <option value="CHE">Chennai</option>
+                <option value="PU">Pune</option>
+                <option value="SHI">Shimla</option>
+            </select>
+    
+            <label for="interests">Interests</label>
+            <div id="interest">
+                <label><input type="checkbox" name="interest" value="sports"/>Sports</label>
+                <label><input type="checkbox" name="interest" value="current affairs"/>Current affairs</label>
+                <label><input type="checkbox" name="interest" value="films"/>Films</label>
+            </div>
+
+            <label for="gender">Gender</label>
+            <div id="gender">
+                <label><input type="radio" name="gender" value="male"/>Male</label>
+                <label><input type="radio" name="gender" value="female" checked/>Female</label>
+            </div>
+
+            <button>Submit</button>
+            <input type="submit" value="checkout" />
+            <input type="reset" value="Reset for all" />
+            <button value="submit">submit</button>
+        </form>
+
+
+        <button>General button</button>
+        
+    </body>
+</html>

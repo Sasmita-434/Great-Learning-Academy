@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Structural Pseudo class Selectors</title>
+        <style>
+            /* two selectors with space */
+            body :first-child{
+                font-family: cursive;
+                color: brown;
+            }
+            /* two selectors without space */
+            a:first-child{
+                color: darkblue;
+                font-family: fantasy;
+            }
+            /* for nth child structural pseudo selector */
+             body :nth-child(2) {
+               font-style: italic;
+               background-color: yellow;
+             }
+             /* last child */
+             body :last-child{
+                font-style: oblique;
+               background-color: violet
+             }
+             div a:nth-of-type(2) {
+                 font-weight: bolder;
+                 background-color: darkolivegreen;
+                 color: black;
+             }
+        </style>
+    </head>
+    <body>
+        <h1 id="wrap">Some headings</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A rerum explicabo harum voluptatum ut, minima ex obcaecati ipsam adipisci 
+            <a href="https://www.google.com">Google Search Page</a><br />
+            <a href="https://www.google.com" target="blank">Google Search Page</a><br />
+            cupiditate vel reprehenderit nostrum delectus non voluptas odit neque illo animi.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquid animi aliquam amet molestias provident sed, vero enim temporibus corrupti dicta, porro hic accusamus saepe totam, quos obcaecati minus facilis.
+        </p>
+        <div class="crop">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis unde iusto perspiciatis corporis dicta necessitatibus numquam pariatur corrupti autem iste nisi architecto, quaerat ab commodi quis ipsa, adipisci nostrum nulla.
+        </div>
+        <div class="crop">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At necessitatibus saepe corporis, 
+            <span>Span 1</span><br />
+            <span>Span 2</span><br />
+            <a href="https://www.facebook.com">facebook</a><br />
+            <a href="https://www.facebook.com">facebook</a><br />
+            <a href="https://www.facebook.com">facebook</a><br />
+            <a href="https://www.gmail.com">G-mail</a><br />
+            <span>Span 3</span>
+            vero quo, rerum nostrum quaerat autem magni possimus dolorem inventore deleniti? Cum nam earum excepturi assumenda alias dolores.
+        </div>
+        <p class="crop">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iure ab officiis provident voluptatem aperiam nihil non neque eius, quos similique modi rem incidunt aliquid unde nisi deleniti autem dicta?
+        </p>
+    </body>
+</html>

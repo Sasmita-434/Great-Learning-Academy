@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basic Cascading</title>
+        <link rel="stylesheet" href="cascade.css">
+        <style>
+            p {
+                color: darkblue;
+            }
+            p {
+                color: rgb(10, 138, 131);
+            }
+        </style>
+        <style>
+            p {
+                color: rgb(99, 9, 36);
+            }
+            p {
+                color: rgb(139, 110, 13);
+            }
+        </style>
+    </head>
+    <body>
+        <p style="color: mediumorchid;"> <!-- inline styles have highesht priority -->
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, id autem adipisci non facere alias quod doloremque ipsam itaque. Sit fuga magnam reiciendis commodi nostrum autem reprehenderit, similique explicabo placeat.
+        </p>
+        <style>
+            p {
+                color: initial;
+            }
+        </style>
+    </body>
+</html>
