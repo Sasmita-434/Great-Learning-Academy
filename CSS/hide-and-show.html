@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Display Property</title>
+        <style>
+            div {
+                padding: 10px;
+                border: 1px solid black;
+            }
+           /* div:nth-of-type(2) {
+                display: none; 
+            } */
+            #message {
+                visibility: hidden; /* it will keep the space empty or keep the space reserved for the element */
+                /* display: none;  it will hide the space with its element */
+                opacity: 0.5;
+               /* position: relative;
+                top: 30px; */
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+           1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates ducimus voluptatem hic quas adipisci, totam rerum consequuntur quisquam velit, neque sit quod asperiores beatae tempore accusamus dicta repellendus eveniet doloribus.
+        </div>
+        <div id="message">
+           2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, dignissimos minus enim qui dolor iusto tempora, nesciunt nihil sapiente, laborum impedit magni tenetur possimus mollitia provident in quo et! Iste!
+        </div>
+        <div>
+           3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem velit voluptatum molestiae dignissimos ipsum? Voluptatum aperiam temporibus neque aliquam perferendis ea quam ipsa obcaecati, accusantium aspernatur, officia, ab vitae eaque.
+        </div>
+        <script>
+            setTimeout(function(){
+                document.getElementById('message').style.visibility = 'visible';
+               /* document.getElementById('message').style.display = 'block'; */
+            }, 5000)
+        </script>
+    </body>
+</html>
